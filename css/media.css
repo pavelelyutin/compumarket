@@ -363,6 +363,11 @@
   }
 
   /* hero */
+  .hero {
+    padding-top: 120px;
+    padding-bottom: 40px;
+  }
+  
   .hero__title {
     font-size: 28px;
   }
