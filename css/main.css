@@ -395,19 +395,19 @@ img {
 }
 
 .experience__item--standing {
-  background-image: url('/images/icons/star.svg');
+  background-image: url('../images/icons/star.svg');
 }
 
 .experience__item--time {
-  background-image: url('/images/icons/clock.svg');
+  background-image: url('../images/icons/clock.svg');
 }
 
 .experience__item--repair {
-  background-image: url('/images/icons/computer.svg');
+  background-image: url('../images/icons/computer.svg');
 }
 
 .experience__item--diagnostics {
-  background-image: url('/images/icons/cash.svg');
+  background-image: url('../images/icons/cash.svg');
 }
 
 .experience__item-title {
@@ -497,7 +497,7 @@ img {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 30px;
-  background-image: url('/images/phone-details.svg');
+  background-image: url('../images/phone-details.svg');
   background-repeat: no-repeat;
   background-position: center;
 }
