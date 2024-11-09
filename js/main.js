@@ -1,5 +1,5 @@
-document.addEventListener("DOMContentLoaded", function() {
-  const backToTop = document.querySelector('.footer__up');
+document.addEventListener("DOMContentLoaded", function () {
+  const backToTop = document.querySelector(".footer__up");
 
   // Плавная прокрутка при клике на кнопку
   backToTop.addEventListener("click", function (event) {
@@ -30,29 +30,25 @@ document.addEventListener("DOMContentLoaded", function() {
   initMap();
 
   async function initMap() {
-      await ymaps3.ready;
+    await ymaps3.ready;
 
-      const {YMap, YMapDefaultSchemeLayer, YMapDefaultFeaturesLayer} = ymaps3;
-      const { YMapDefaultMarker } = await ymaps3.import(
-        "@yandex/ymaps3-markers@0.0.1"
+    const { YMap, YMapDefaultSchemeLayer, YMapDefaultFeaturesLayer } = ymaps3;
+    const { YMapDefaultMarker } = await ymaps3.import(
+      "@yandex/ymaps3-markers@0.0.1"
     );
 
-      const map = new YMap(
-          document.getElementById('map'),
-          {
-              location: {
-                  center: [45.054380, 53.215580],
-                  zoom: 16
-              }
-          }
-      );
+    const map = new YMap(document.getElementById("map"), {
+      location: {
+        center: [45.05438, 53.21558],
+        zoom: 16,
+      },
+    });
 
-      map.addChild(new YMapDefaultSchemeLayer());
-      map.addChild(new YMapDefaultFeaturesLayer());
+    map.addChild(new YMapDefaultSchemeLayer());
+    map.addChild(new YMapDefaultFeaturesLayer());
 
-      const marker = new YMapDefaultMarker({ coordinates: [45.054380, 53.215580] });
+    const marker = new YMapDefaultMarker({ coordinates: [45.05438, 53.21558] });
 
-      map.addChild(marker);
+    map.addChild(marker);
   }
-})
-
+});
