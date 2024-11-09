@@ -489,6 +489,7 @@ img {
 
 .experience__item-text {
   color: var(--color-red);
+  text-align: center;
 }
 
 /* catalog */
